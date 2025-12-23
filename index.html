@@ -1,10 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Hello World</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome Banner</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+    }
+
+    .banner {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #4f46e5, #06b6d4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #ffffff;
+      padding: 40px 20px;
+    }
+
+    .banner-content {
+      max-width: 700px;
+    }
+
+    .banner h1 {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+
+    .banner p {
+      font-size: 1.2rem;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+
+    .banner a {
+      display: inline-block;
+      padding: 14px 32px;
+      background-color: #ffffff;
+      color: #4f46e5;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .banner a:hover {
+      background-color: #e0e7ff;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 600px) {
+      .banner h1 {
+        font-size: 2.2rem;
+      }
+
+      .banner p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+
+  <section class="banner">
+    <div class="banner-content">
+      <h1>Welcome to Our Website</h1>
+      <p>
+        We’re glad you’re here. Discover our services, explore new ideas,
+        and let’s build something great together.
+      </p>
+      <a href="#get-started">Get Started</a>
+    </div>
+  </section>
+
 </body>
 </html>
+
+
